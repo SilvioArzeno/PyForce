@@ -33,7 +33,7 @@ try:
 
 except:
 
-    print(LeadsDF.loc[[i]])
+    print(LeadsDF.loc[[i]])  #Print Complete row that caused the error
 
 
 
