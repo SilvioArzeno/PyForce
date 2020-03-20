@@ -12,14 +12,14 @@ def InitializeAssignments(): # Load assignments from File
 
 AssignmentsDF = InitializeAssignments() 
 
-def RoundRobinAssignment(ReasonLost):
+def RoundRobinAssignment(ReasonLost): 
     LowestAssignment = AssignmentsDF[ReasonLost].idxmin()
     AssignmentsDF[ReasonLost][LowestAssignment] += 1
     NewOwner = AssignmentsDF['USER ID'][LowestAssignment]
     return NewOwner
 
 
-sourcefile = "LeadDistroCopy.csv"
+sourcefile = "LeadDistroCopy.csv" #This has to change
 
 
 
